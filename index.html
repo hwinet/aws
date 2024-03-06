@@ -6,20 +6,20 @@
 -->
 <html>
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-84HG3LSH8P"
-    ></script>
+    <!-- Google Tag Manager -->
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-84HG3LSH8P");
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-PK5LFZST");
     </script>
+    <!-- End Google Tag Manager -->
     <link rel="icon" href="images/fav1.ico" />
     <title>Hwinet Network</title>
     <meta charset="utf-8" />
@@ -132,28 +132,20 @@
             <div class="posts">
               <article>
                 <a href="#" class="image"
-                  ><img src="images/pic01.jpg" alt=""
+                  ><img src="images/fix2.jpg" alt=""
                 /></a>
-                <h3>Interdum aenean</h3>
-                <p>
-                  Aenean ornare velit lacus, ac varius enim lorem ullamcorper
-                  dolore. Proin aliquam facilisis ante interdum. Sed nulla amet
-                  lorem feugiat tempus aliquam.
-                </p>
+                <h3>upload soon</h3>
+                <p>I will upload it as soon as possible</p>
                 <ul class="actions">
                   <li><a href="#" class="button">More</a></li>
                 </ul>
               </article>
               <article>
                 <a href="#" class="image"
-                  ><img src="images/pic02.jpg" alt=""
+                  ><img src="images/fix2.jpg" alt=""
                 /></a>
-                <h3>Nulla amet dolore</h3>
-                <p>
-                  Aenean ornare velit lacus, ac varius enim lorem ullamcorper
-                  dolore. Proin aliquam facilisis ante interdum. Sed nulla amet
-                  lorem feugiat tempus aliquam.
-                </p>
+                <h3>upload soon</h3>
+                <p>I will upload it as soon as possible</p>
                 <ul class="actions">
                   <li><a href="#" class="button">More</a></li>
                 </ul>
@@ -183,11 +175,11 @@
               <li>
                 <span class="opener">Cloud</span>
                 <ul>
-                  <li><a href="aws.html">AWS</a></li>
+                  <li><a href="page/cloud/aws/cloud-aws.html">AWS</a></li>
                   <li><a href="#">Azure</a></li>
                   <li><a href="#">GCP</a></li>
                   <li><a href="#">Docker</a></li>
-                  <li><a href="generic.html">VMware</a></li>
+                  <li><a href="#">VMware</a></li>
                 </ul>
               </li>
               <li>
@@ -230,35 +222,28 @@
             </header>
             <div class="mini-posts">
               <article>
-                <a href="#" class="image"
-                  ><img src="images/pic07.jpg" alt=""
+                <a href="page/command/git/command-git.html" class="image"
+                  ><img src="page/command/git1.jpg" alt=""
                 /></a>
-                <p>
-                  Aenean ornare velit lacus, ac varius enim lorem ullamcorper
-                  dolore aliquam.
-                </p>
+                <p></p>
               </article>
               <article>
                 <a href="#" class="image"
-                  ><img src="images/pic08.jpg" alt=""
+                  ><img src="images/fix2.jpg" alt=""
                 /></a>
-                <p>
-                  Aenean ornare velit lacus, ac varius enim lorem ullamcorper
-                  dolore aliquam.
-                </p>
+                <p>upload soon</p>
               </article>
               <article>
                 <a href="#" class="image"
-                  ><img src="images/pic09.jpg" alt=""
+                  ><img src="images/fix2.jpg" alt=""
                 /></a>
-                <p>
-                  Aenean ornare velit lacus, ac varius enim lorem ullamcorper
-                  dolore aliquam.
-                </p>
+                <p>upload soon</p>
               </article>
             </div>
             <ul class="actions">
-              <li><a href="#" class="button">More</a></li>
+              <li>
+                <a href="page/command/command.html" class="button">More</a>
+              </li>
             </ul>
           </section>
 
@@ -267,11 +252,6 @@
             <header class="major">
               <h2>Welcome</h2>
             </header>
-            <p>g</p>
-            <p>r</p>
-            <p>a</p>
-            <p>p</p>
-            <p>h</p>
             <p>total visitors</p>
             <p>today visitors</p>
             <p>yesterday visitors</p>
@@ -281,6 +261,17 @@
               </li>
             </ul>
           </section>
+
+          <script>
+            (async function () {
+              const res = await fetch(
+                "https://www.googleapis.com/analytics/v3/data/ga?ids=ga%3A300376218&dimensions=ga%3Asource%2Cga%3Akeyword&metrics=ga%3Ausers%2Cga%3AsessionDuration%2Cga%3AadClicks%2Cga%3AavgTimeOnPage%2Cga%3AavgSearchResultViews%2Cga%3ApageLoadTime&start-date=7daysAgo&end-date=yesterday"
+              );
+              const data = await res.json();
+
+              console.log(data);
+            })();
+          </script>
 
           <!-- Footer -->
           <footer id="footer">
